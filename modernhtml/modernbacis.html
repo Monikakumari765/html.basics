@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure and Figcaption Example</title>
+</head>
+
+
+    <h2>Figure and Figcaption</h2>
+
+    <!-- Figure with Caption -->
+    <figure>
+        <img src="https://via.placeholder.com/150" 
+             alt="Placeholder Image">
+        <figcaption>This is a placeholder image.</figcaption>
+    </figure>
+
+    <br>
+    <!-- Simple Image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSSsdsFDRblO8zsfX38naZNDclvII5g_kuQ&s"
+    alt="panda" width="300>"
+
+          -->
+          <!-- summary=clickable titile
+           details= create seperateble area -->
+
+            <details>
+                <summary>Click to see more details</summary>
+                <p>html stands for hyper text markup languageit is used to create webpage structure.</p>
+            </details>
+
+            <h2>Progress Bar</h2>
+
+            <p>HTML Course Progree</p>
+            <progress value="50" max="100"></progress>
+
+            <p>project upload progree</p>
+            <progress value="80" max="100"></progress>
+
+            <h2>Meter Tag Example</h2>
+            <p>Battery Level</p>
+
+    <meter value="85" 
+    min="0" 
+    max="100"
+    low="20"
+    high="80"
+    optimum="100" 
+    ></meter>
+
+    <h2>Canvas example</h2>
+
+    <!-- canvas itself is blank 
+     javascript draws inside it -->
+
+    <canvas 
+    id="myCanvas"
+    width="200" 
+    height="100" 
+    style="border:1px solid #000000;">
+    
+    </canvas> 
+    <script>
+        // Select canvas
+        let canvas = document.getElementById("myCanvas");
+
+        // Create drawing object
+        let ctx = canvas.getContext("2d");
+
+        // Draw rectangle
+        ctx.fillStyle = "purple";
+        ctx.fillRect(0,0, 150, 100);
+    </script>
+
+    <ul>
+        <li>Dollar: $1.00</li>
+        <li>Euro: €0.85</li>
+        <li>Pound: £0.75</li>
+        <li>Yen: ¥110.00</li>
+        <li>rupee: ₹100.00</li>
+
+    </ul>
+    <!-- entities display special characters -->
+    <p>less than symbol: &lt;</p>
+    <p>greater than symbol: &gt;</p>
+    <p>ampersand symbol: &amp;</p>
+    <p> non -breaking space: &nbsp;</p>
+    <p>Copyright &copy; 2023 My Website. All rights reserved.</p>
+    <p>hello&nbsp;world</p>
+    <p>hello                world</p>
+    <p></p>
+
+
+
+</body>
+</html>

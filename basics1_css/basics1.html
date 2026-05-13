@@ -1,0 +1,65 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Internal External CSS</title>
+
+    <!-- External CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* Tag / Section Name Selector */
+        h2 {
+            color: blue;
+            background-color: lightyellow;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .para {
+            color: green;
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        #box {
+            background-color: pink;
+            width: 250px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color:red; background-color:rgb(211, 211, 211); text-align:center;">
+        Inline CSS Example
+    </h1>
+
+    <!-- Internal CSS -->
+    <h2>Internal CSS Example</h2>
+
+    <p class="para">
+        This paragraph uses class selector in Internal CSS.
+    </p>
+
+    <div id="box">
+        This div uses ID selector in Internal CSS.
+    </div>
+
+    <br>
+
+    <!-- External CSS -->
+    <button class="btn">
+        External CSS Button
+    </button>
+
+</body>
+</html>
