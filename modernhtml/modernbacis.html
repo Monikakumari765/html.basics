@@ -46,38 +46,41 @@
             <h2>Meter Tag Example</h2>
             <p>Battery Level</p>
 
-    <meter value="85" 
-    min="0" 
-    max="100"
-    low="20"
-    high="80"
-    optimum="100" 
-    ></meter>
+    
+            <meter value="85" 
+    
+            min="0" 
+    
+            max="100"
+    
+            low="20"
+    
+            high="80"
+    
+            optimum="100" ></meter>
 
     <h2>Canvas example</h2>
 
-     canvas itself is blank 
-     javascript draws inside it 
+<p>Canvas itself is blank. JavaScript draws inside it.</p>
 
-    <canvas 
+<canvas 
     id="myCanvas"
-    width="200" 
-    height="100" 
+    width="200"
+    height="100"
     style="border:1px solid #000000;">
-    
-    </canvas> 
-    <script>
-        // Select canvas
-        let canvas = document.getElementById("myCanvas"); 
+</canvas>
 
-        // Create drawing object
-        let ctx = canvas.getContext("2d");
+<script>
+    // Select canvas
+    const canvas = document.getElementById("myCanvas");
 
-        // Draw rectangle
-        ctx.fillStyle = "purple";
-        ctx.fillRect(0,0, 150, 100);
-    </script>
+    // Create drawing object (context)
+    const ctx = canvas.getContext("2d");
 
+    // Draw rectangle
+    ctx.fillStyle = "purple";
+    ctx.fillRect(0, 0, 150, 100);
+</script>
     <ul>
         <li>Dollar: $1.00</li>
         <li>Euro: €0.85</li>
