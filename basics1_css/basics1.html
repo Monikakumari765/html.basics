@@ -1,65 +1,91 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline Internal External CSS</title>
-
-    <!-- External CSS File Link -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Internal CSS -->
-    <style>
-
-        /* Tag / Section Name Selector */
-        h2 {
-            color: blue;
-            background-color: lightyellow;
-            text-align: center;
-        }
-
-        /* Class Selector */
-        .para {
-            color: green;
-            font-size: 20px;
-        }
-
-        /* ID Selector */
-        #box {
-            background-color: pink;
-            width: 250px;
-            padding: 20px;
-            border: 2px solid black;
-        }
-
-    </style>
+    <title>Document</title>
 </head>
+<style> 
+    .internal{
+        background-color: rgb(255, 17, 0);
+    }
+</style>
 <body>
+    <section class="internal">
 
-    <!-- Inline CSS -->
-    <h1 style="color:red; background-color:rgb(211, 211, 211); text-align:center;">
-        Inline CSS Example
-    </h1>
 
-    <!-- Internal CSS -->
-    <h2>Internal CSS Example</h2>
+        <h2> internal css example</h2>
+        <p class="internal-example"> 
+            this paragraph uses internal css.
+        </p>
+    </section>
+    <section> 
+        <h2> inline css example</h2>
+        <p style="color:red;background-color:yellow;font-size:larger;"> 
+            this paragraph uses inline css
+        </p>
+        <p style="color:blue;background-color:yellow;font-size:larger;"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+    </section>
 
-    <p class="para">
-        This paragraph uses class selector in Internal CSS.
+    <!-- paragraph is block tag
+     font style = style of text  -->
+     <section class="parent">
+    <h2>Parent Child Example</h2>
+
+    <p class="child">
+        This is child 1
     </p>
 
-    <div id="box">
-        This div uses ID selector in Internal CSS.
+    <p class="child">
+        This is child 2
+    </p>
+
+    <p class="child">
+        This is child 3
+    </p>
+</section>
+
+        <a href="https://www.google.com/" target="_blank">google</a>
+        <h2> css UNITS</h2>
+        <p class="px-example"> 
+            this paragraph uses px units.
+        </p>
+
+        <p class="percent-example"> 
+            this paragraph uses percent units.
+        </p>
+        <p class="em-example"> 
+            this paragraph uses em units.
+        </p>
+        <p class="rem-example"> 
+            this paragraph uses rem units.
+        </p>
+        <section style="font-size:16px;">
+    
+    <div style="font-size:2em;">
+        <p>This is paragraph text</p>
     </div>
 
-    <br>
+    <section>
+        <h2>basic box model</h2>
+        <div class="box-model-card">
+            <h3>profile card</h3>
+            <p>This card demonstrate padding border margin height and width</p>
+        </div>
+    </section>
+<!-- border is the line that goes around the content and padding of an element.
+It can be styled with different widths, colors, and patterns. -->
+</section>
+<!-- padding =space inside box 
+ border:outline 
+ margin:space -->
+ <h1 class="shadow-text">
+    Hello World
+</h1>
 
-    <!-- External CSS -->
-    <button class="btn">
-        External CSS Button
-    </button>
 
+ 
 </body>
 </html>
