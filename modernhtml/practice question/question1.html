@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Image Gallery</h1>
+
+<div class="gallery">
+
+    <a href="https://a-z-animals.com/media/2021/11/Best-Pet-Snakes-Boa-Constrictor.jpg" target="_blank">
+        <img src="https://a-z-animals.com/media/2021/11/Best-Pet-Snakes-Boa-Constrictor.jpg" alt="Boa Constrictor">
+    </a>
+
+    <a href="https://a-z-animals.com/media/Guinea-fowl-4-1024x535.jpg" target="_blank">
+        <img src="https://a-z-animals.com/media/Guinea-fowl-4-1024x535.jpg" alt="Guinea Fowl">
+    </a>
+
+    <a href="https://media.istockphoto.com/id/146076494/photo/panda.jpg?s=1024x1024&w=is&k=20&c=riW7qeUwxGFuqHM0cHP4NGRHE9wkFZiC33YUeVgN6n8=" target="_blank">
+        <img src="https://media.istockphoto.com/id/146076494/photo/panda.jpg?s=1024x1024&w=is&k=20&c=riW7qeUwxGFuqHM0cHP4NGRHE9wkFZiC33YUeVgN6n8=" alt="Forest pathway">
+    </a>
+    
+    <a href="https://media.istockphoto.com/id/515721627/photo/colorful-autumn-morning-in-the-carpathian-mountains.jpg?s=1024x1024&w=is&k=20&c=qA0vX1Zmr-7us575lefr5tOj5pDQnX84zFgsRPp4EZQ=" target="_blank">
+        <img src="https://media.istockphoto.com/id/515721627/photo/colorful-autumn-morning-in-the-carpathian-mountains.jpg?s=1024x1024&w=is&k=20&c=qA0vX1Zmr-7us575lefr5tOj5pDQnX84zFgsRPp4EZQ=" alt="City skyline">
+    </a>
+
+    <a href="https://media.istockphoto.com/id/1408291706/photo/european-brown-bear.jpg?s=1024x1024&w=is&k=20&c=ANV2BfX95rM8nBjp1CuA_IiLZy_XMFQeCPNNyrDo7m0=" target="_blank">
+        <img src="https://media.istockphoto.com/id/1408291706/photo/european-brown-bear.jpg?s=1024x1024&w=is&k=20&c=ANV2BfX95rM8nBjp1CuA_IiLZy_XMFQeCPNNyrDo7m0=" alt="Snow mountains">
+    </a>
+
+    <a href="https://media.istockphoto.com/id/596796678/photo/colorful-autumn-landscape-with-misty-valley-holbav-transylvania-romania-europe.jpg?s=1024x1024&w=is&k=20&c=Vg1GuaAR1IrYBDI7QQJou1Xh41YgFLb4_Tfwd-X5HD4=" target="_blank">
+        <img src="https://media.istockphoto.com/id/596796678/photo/colorful-autumn-landscape-with-misty-valley-holbav-transylvania-romania-europe.jpg?s=1024x1024&w=is&k=20&c=Vg1GuaAR1IrYBDI7QQJou1Xh41YgFLb4_Tfwd-X5HD4=" alt="River bridge">
+    </a>
+
+</div>
+
+</body>
+</html>
