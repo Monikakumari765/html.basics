@@ -1,29 +1,242 @@
 <!DOCTYPE html>
+
+<!-- 
+DAY 3 MASTER TEMPLATE
+TOPICS:
+Lists, Tables, Semantic Layout
+
+This file represents a REAL webpage structure.
+-->
+
 <html lang="en">
+
 <head>
-    <title>Student Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 - Lists Tables Layout</title>
 </head>
+
 <body>
 
-    <table border="1">
-        <caption>Student Data</caption>
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
 
+<header>
+    <!-- 
+    <header> contains:
+    Logo, title, intro
+    -->
+
+    <h1>My Website</h1>
+    <p>Learning HTML</p>
+</header>
+
+<hr>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+    <!-- 
+    Navigation links Used for menu.
+    The <nav> tag is a semantic element used to define a section of navigation links on a webpage. 
+    It usually contains menus, links to different pages, or important sections of the website.
+    -->
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<hr>
+
+<!-- ========================= -->
+<!-- MAIN CONTENT -->
+<!-- ========================= -->
+
+<main>
+
+<!-- ========================= -->
+<!-- LIST SECTION -->
+<!-- ========================= -->
+
+<section>
+
+<h2>Lists Example</h2>
+
+<!-- UNORDERED LIST -->
+
+<h3>Unordered List (Shopping List)</h3>
+
+<ul type="circle" >
+    <li>Milk</li>
+    <li>Bread</li>
+    <li>Butter</li>
+</ul>
+
+<!-- ORDERED LIST -->
+
+<h3>Ordered List (Steps)</h3>
+
+<ol type="1" start="5" reversed>
+    <li>Wake up</li>
+    <li>Study HTML</li>
+    <li>Practice coding</li>
+</ol>
+
+<!-- NESTED LIST -->
+
+<h3>Nested List</h3>
+
+<ul>
+    <li>Fruits
+        <ul>
+            <li>custard apple</li>
+            <li>leechi</li>
+        </ul>
+    </li>
+    <li>Vegetables
+        <ul>
+            <li>ladyfinger</li>
+            <li>cabbage</li>
+        </ul>
+    </li>
+</ul>
+
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<!-- TABLE SECTION -->
+<!-- ========================= -->
+
+<section>
+
+<h2>Table Example</h2>
+
+<!-- 
+<table> displays structured data
+-->
+
+
+
+
+<table border="1">
+
+    <!-- TABLE HEADER -->
+    <thead>
         <tr>
             <th>Name</th>
-            <th>Roll No</th>
+            <th>class</th>
+            <th>age</th>
         </tr>
+    </thead>
 
+    <!-- TABLE BODY -->
+    <tbody>
         <tr>
             <td>Monika</td>
-            <td>2006</td>
+            <td>12</td>
+            <td>20</td>
         </tr>
-
         <tr>
-            <td>Kriti</td>
-            <td>2005</td>
+            <td>sanskriti</td>
+            <td>10</td>
+            <td>19</td>
         </tr>
+    </tbody>
 
-    </table>
+    <!-- TABLE FOOTER -->
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>39</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br>
+
+<!-- ROWSPAN EXAMPLE -->
+
+<h3>Rowspan Example</h3>
+
+<table border="1">
+
+<tr>
+    <th>Name</th>
+    <th>Day</th>
+    <th>Subject</th>
+</tr>
+
+<tr>
+    <td rowspan="2">Monika</td>
+    <td>Monday</td>
+    <td>Math</td>
+</tr>
+
+<tr>
+    <td>Tuesday</td>
+    <td>Science</td>
+</tr>
+<tr>
+    <td>asdfg</td>
+    <td>asdfg</td>
+    <td>fghjl</td>
+</tr>
+
+</table>
+
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<!-- ARTICLE SECTION -->
+<!-- ========================= -->
+
+<section>
+
+<h2>Article Section</h2>
+
+<article>
+    <!-- 
+    <article> represents independent content
+    -->
+
+    <h3>HTML Learning Journey</h3>
+
+    <p>
+    Today we learned about lists and tables.
+    These are essential for structuring content.
+    </p>
+
+</article>
+
+</section>
+
+</main>
+
+<hr>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+    <!-- 
+    Footer contains:
+    copyright, links
+    -->
+</footer>
+<p>2026</p>
 
 </body>
+
 </html>
